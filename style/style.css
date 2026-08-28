@@ -1,0 +1,99 @@
+:root {
+    --bg: #ddd;
+    --title: #c5dcff;
+    --white: #ffffff;
+}
+
+body {
+    font-size: 12px;
+    font-family: Tahoma, sans-serif;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at top, #212b4e 0%, #0a0d14 70%);
+    font-family: Tahoma, Arial, sans-serif;
+    color: var(--title);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.donate-card {
+    max-width: 350px;
+    width: 100%;
+    background: linear-gradient(160deg, #1c2333 0%, #131826 100%);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 12px;
+    padding: 40px 16px 80px;
+    box-shadow: 0 20px 60px #00000080, 0 0 0 1px #ffffff08 inset;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+.header-icon {
+    width: 160px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.item {
+    border: 1px solid #ffffff0f;
+    border-radius: 12px;
+    padding: 16px 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: #ffffff08;
+    transition: all 0.5s;
+}
+
+.item:hover {
+    background: #ffffff0f;
+    border-color: #ffffff1f;
+}
+
+.info {
+    word-break: break-all;
+}
+
+.link {
+    display: inline-block;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #ffffff1f;
+    background: radial-gradient(circle, #a146ba 30%, #772aff 100%);
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+    border: 1px solid #c2c2c2;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #ffffff0f;
+    font-size: 14px;
+    color: #6b7388;
+}
+
+.footer span {
+    color: #f7931a;
+}
