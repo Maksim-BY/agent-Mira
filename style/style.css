@@ -79,6 +79,8 @@ body {
     border: 1px solid #ffffff1f;
     background: radial-gradient(circle, #a146ba 30%, #772aff 100%);
     transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
 .link:hover {
@@ -92,12 +94,10 @@ body {
     left: -150%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-        90deg, 
-        rgba(255, 255, 255, 0) 0%, 
-        rgba(255, 255, 255, 0.35) 50%, 
-        rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.35) 50%,
+            rgba(255, 255, 255, 0) 100%);
     transform: skewX(-25deg);
     animation: shine-effect 5s infinite ease-in-out;
 }
@@ -106,9 +106,11 @@ body {
     0% {
         left: -150%;
     }
+
     33% {
         left: 120%;
     }
+
     100% {
         left: 150%;
     }
